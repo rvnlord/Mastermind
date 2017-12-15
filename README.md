@@ -1,5 +1,5 @@
 # Mastermind
-This is simple Mastermind game written in Xamarin with remote statitics fetched using WCF Service hosted on Azure Storage. You can download binary file from releases page:
+This is simple Mastermind game written in Xamarin with remote statistics managed by WCF Service hosted on Azure. You can download binary file from releases page:
 
 [Release](https://github.com/rvnlord/Mastermind/releases)
 

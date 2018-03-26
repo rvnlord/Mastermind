@@ -12,6 +12,7 @@ lib/
 Properties
 SeriousMastermind/SeriousMastermind/Resources/drawable/*.png
 *.bak
+*.Designer.cs
 
 # User-specific files
 *.suo

@@ -3,6 +3,6 @@ This is simple Mastermind game written in Xamarin with Statistics and ability to
 
 Download: [SeriousMastermind.apk](https://github.com/rvnlord/Mastermind/releases/SeriousMastermind.apk)
 
-| ![MainActivity](/Images/2018-03-26_193806.png?raw=true "Main Activity" | width=100) | ![StoryActivity](/Images/2018-03-26_193853.png?raw=true "Story Activity" | width=100) | 
+| ![MainActivity](/Images/2018-03-26_193806.png?raw=true "Main Activity") | ![StoryActivity](/Images/2018-03-26_193853.png?raw=true "Story Activity") | 
 |:---:|:---:|
 | Main Activity | Story Activity |

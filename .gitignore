@@ -10,7 +10,7 @@ lib/
 *.config
 *.sqlite
 Properties
-*.png
+SeriousMastermind/SeriousMastermind/Resources/drawable/*.png
 *.bak
 
 # User-specific files

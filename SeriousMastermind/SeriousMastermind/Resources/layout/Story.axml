@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svStoryVertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/llStory">
+            <TextView
+                android:text="Historia (odblokowane 0 z 12)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblStoryDescription"
+                android:layout_gravity="center"
+                android:paddingRight="10.0dp"
+                android:paddingLeft="10.0dp"
+                android:paddingTop="10.0dp"
+                android:paddingBottom="0.0dp"
+                android:textSize="20.0dp" />
+            <TextView
+                android:text="sdf sdf  sdf sdf sdf sdf sd fsd  sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd   sdf sdf  sdf sdf sdf sdf sd fsd  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblStoryCOntent"
+                android:layout_gravity="left"
+                android:padding="10.0dp"
+                android:textSize="15.0dp" />
+            <Button
+                android:id="@+id/btnBackToMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wróc fo Gry"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

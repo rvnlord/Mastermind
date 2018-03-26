@@ -7,6 +7,11 @@
 lib/
 *.DotSettings
 *.licx
+*.config
+*.sqlite
+Properties
+*.png
+*.bak
 
 # User-specific files
 *.suo

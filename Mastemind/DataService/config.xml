@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <connectionStrings>
-    <add name="DBCS" providerName="System.Data.SQLite" connectionString="Data Source=~/Data/database.sqlite; Version=3;" />
-  </connectionStrings>
-</configuration>

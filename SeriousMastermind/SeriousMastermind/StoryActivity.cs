@@ -29,7 +29,7 @@ namespace SeriousMastermind
             _btnBackToMain.Click += btnBackToMain_Click;
 
             var db = new ServiceDbContext();
-            var player = Intent.GetStringExtra("PlayerName") ?? "Brak";
+            var player = Intent.GetStringExtra("PlayerName") ?? "Unspecified";
             var statistics = db.Statistics.Where(s => s.Name.Eq(player)).ToList();
             var bestRowLength = statistics.MaxBy(s => s.CodeLength).CodeLength;
             var bestTriesNum = statistics.Where(s => s.CodeLength == bestRowLength).MinBy(s => s.Tries).Tries;
@@ -42,7 +42,7 @@ namespace SeriousMastermind
             var allL = allV.Length;
             var unlockedN = allL - idx;
             
-            _lblStoryDescription.Text = $"Historia (odblokowane {unlockedN} z {allL})";
+            _lblStoryDescription.Text = $"Story (unlocked {unlockedN} of {allL})";
             var indent = Enumerable.Repeat(" ", 8).JoinAsString();
             _lblStoryContent.Text = indent + 
                 db.Stories.ToList().First().Content.Split(" ").Split(allL).Take(unlockedN).SelectMany(w => w).JoinAsString(" ").Replace("\\n", "\n\n" + indent) +

@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000">
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -17,7 +18,7 @@
             android:minHeight="25px"
             android:id="@+id/llStory">
             <TextView
-                android:text="Historia (odblokowane 0 z 12)"
+                android:text="Story (unlocked 0 z 60)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/lblStoryDescription"
@@ -39,7 +40,7 @@
                 android:id="@+id/btnBackToMain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wróc fo Gry"
+                android:text="Back to the Game"
                 android:layout_gravity="center" />
         </LinearLayout>
     </ScrollView>

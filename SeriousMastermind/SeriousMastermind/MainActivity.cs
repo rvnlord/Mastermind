@@ -293,12 +293,12 @@ namespace SeriousMastermind
             if (CodeLength <= 0 || Tries <= 0)
             {
                 var message =
-                    "Nie można rozpocząć nowej Gry ponieważ nie wybrano poprawnej " +
-                    $"{(CodeLength <= 0 ? "Długości Kodu (maks 6)" : "")}" +
-                    $"{(CodeLength <= 0 && Tries <= 0 ? " i " : "")}" +
-                    $"{(Tries <= 0 ? "Ilości Prób (maks 10)" : "")}";
+                    "You can't start New Game until you select correct " +
+                    $"{(CodeLength <= 0 ? "Code Length (max 6)" : "")}" +
+                    $"{(CodeLength <= 0 && Tries <= 0 ? " and " : "")}" +
+                    $"{(Tries <= 0 ? "Number of Tries (max 10)" : "")}";
 
-                ShowMessageBox("Błąd", message);
+                ShowMessageBox("Error", message);
                 return;
             }
 
@@ -317,7 +317,7 @@ namespace SeriousMastermind
 
             _btnStatistics.Enabled = false;
             var btnStatisticsText = _btnStatistics.Text;
-            _btnStatistics.Text = "Ładowanie...";
+            _btnStatistics.Text = "Loading...";
             
             await Task.Run(() =>
             {
@@ -328,7 +328,7 @@ namespace SeriousMastermind
                 }
                 catch (Exception ex)
                 {
-                    RunOnUiThread(() => ShowMessageBox("Błąd", ex.Message));
+                    RunOnUiThread(() => ShowMessageBox("Error", ex.Message));
                 }
 
             });
@@ -392,8 +392,7 @@ namespace SeriousMastermind
 
                 for (var i = 0; i < _llContent.ChildCount; i++)
                 {
-                    var currRow = _llContent.GetChildAt(i) as LinearLayout;
-                    if (currRow != null && currRow.Tag.ToString() == "GameRow")
+                    if (_llContent.GetChildAt(i) is LinearLayout currRow && currRow.Tag.ToString() == "GameRow")
                         rows.Add(currRow);
                 }
                 foreach (var row in rows)
@@ -459,7 +458,7 @@ namespace SeriousMastermind
                 }
             }
 
-            _lblTriesLeft.Text = $"Prób: {Tries--}";
+            _lblTriesLeft.Text = $"Tries: {Tries--}";
         }
 
         private int ConvertDpToPixels(float dpValue)

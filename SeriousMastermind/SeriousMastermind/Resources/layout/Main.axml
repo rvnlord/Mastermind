@@ -6,7 +6,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="#000000">
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -58,7 +59,7 @@
                     android:layout_gravity="center"
                     android:id="@+id/llCodeLength">
                     <TextView
-                        android:text="Długość Kodu: "
+                        android:text="Code Length: "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/lblCodeLength"
@@ -80,7 +81,7 @@
                     android:layout_gravity="center"
                     android:id="@+id/llTriesNumber">
                     <TextView
-                        android:text="Liczba Prób: "
+                        android:text="Tries: "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/lblTriesNumber"
@@ -105,12 +106,12 @@
                         android:id="@+id/btnNewGame"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Rozpocznij Nową Grę"
+                        android:text="Start New Game"
                         android:layout_gravity="center" />
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sprawdź"
+                        android:text="Check"
                         android:layout_gravity="center"
                         android:id="@+id/btnChack" />
                 </LinearLayout>
@@ -126,13 +127,13 @@
                         android:id="@+id/btnStatistics"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Statystyki"
+                        android:text="Statistics"
                         android:layout_gravity="center" />
                     <Button
                         android:id="@+id/btnShowStory"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Odblokowana Historia"
+                        android:text="Unlocked Story"
                         android:layout_gravity="center" />
                 </LinearLayout>
                 <LinearLayout
@@ -147,7 +148,7 @@
                         android:minWidth="25px"
                         android:minHeight="25px"
                         android:layout_width="300dp"
-                        android:layout_height="100dp"
+                        android:layout_height="200dp"
                         android:id="@+id/lvStatistics" />
                 </LinearLayout>
             </LinearLayout>
